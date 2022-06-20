@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webapp1:
+    image: "httpd:alpine"
+    ports: 
+      - "8006:80"
+    volumes:
+      - ./test/:/usr/local/apache2/htdocs/
